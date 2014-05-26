@@ -18,7 +18,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
 }
 
-IMAGES_STORE = 'D:\pycode\dianying\static\images'
+IMAGES_STORE = r'D:\github\dianyings\1\static\images'
 IMAGES_EXPIRES = 90
 # IMAGES_THUMBS = {
 #     'small': (24, 24),
@@ -29,7 +29,7 @@ IMAGES_EXPIRES = 90
 COOKIES_ENABLED = False
 
 # 250 ms of delay
-DOWNLOAD_DELAY = 0.15
+DOWNLOAD_DELAY = 0.10
 #AGENT
 USER_AGENT_LIST = [
     "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:21.0) Gecko/20100101 Firefox/21.0",
@@ -43,7 +43,7 @@ USER_AGENT_LIST = [
 
 #Django相关
 import sys,os
-pro_dir = 'D:\pycode\dianying'
+pro_dir = r'D:\github\dianyings\1'
 sys.path.append(pro_dir)
 os.environ['DJANGO_SETTINGS_MODULE'] = 'dianying.settings'
 
